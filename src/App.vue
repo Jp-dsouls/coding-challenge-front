@@ -44,13 +44,13 @@ const submitMatrix = async () => {
     const matrix = JSON.parse(matrixInput.value);
 
     // Enviar la matriz a la API 1 (QR Factorization)
-    const qrResponse = await axios.post("/qr-factorization", { matrix });
+    const qrResponse = await axios.post("http://localhost:4000/api/qr-factorization", { matrix });
 
     // Extraer Q y R de la respuesta
     const { Q, R } = qrResponse.data;
 
     // Enviar Q y R a la API 2 (Matrix Stats)
-    const statsResponse = await axios.post("/matrix-stats", { Q, R });
+    const statsResponse = await axios.post("http://localhost:3001/api/matrix-stats", { Q, R });
 
     // Guardar los resultados
     results.value = {

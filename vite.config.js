@@ -13,16 +13,6 @@ export default defineConfig({
   server:{
     host: '0.0.0.0',
     port: 5173,
-    proxy: {
-      '/qr-factorization': {
-        target: 'http://localhost:4000/api/', // URL de la API 1
-        changeOrigin: true,
-      },
-      '/matrix-stats': {
-        target: 'http://localhost:3001/api/', // URL de la API 2
-        changeOrigin: true,
-      },
-    }
   },
   resolve: {
     alias: {
