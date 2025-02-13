@@ -13,11 +13,11 @@ export default defineConfig({
   server:{
     proxy: {
       '/qr-factorization': {
-        target: 'http://localhost:4000', // URL de la API 1
+        target: 'http://localhost:4000/api/', // URL de la API 1
         changeOrigin: true,
       },
       '/matrix-stats': {
-        target: 'http://localhost:3001', // URL de la API 2
+        target: 'http://localhost:3001/api/', // URL de la API 2
         changeOrigin: true,
       },
     }
