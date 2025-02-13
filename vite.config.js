@@ -11,6 +11,8 @@ export default defineConfig({
     vueDevTools(),
   ],
   server:{
+    host: '0.0.0.0',
+    port: 5173,
     proxy: {
       '/qr-factorization': {
         target: 'http://localhost:4000/api/', // URL de la API 1
