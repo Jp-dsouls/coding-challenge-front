@@ -1,41 +1,37 @@
-# front-coding-challenge
+# Configuración del Proyecto
 
-This template should help get you started developing with Vue 3 in Vite.
+## 1. Requisitos previos
 
-## Recommended IDE Setup
+| Nombre | Version    | Descripcion                |
+| :-------- | :------- | :------------------------- |
+| `Node` | `20.17.0` | **Required**. |
+| `axios` | `1.7.9` | **Required**. |
+| `vue` | `3.5.13` | **Required**. |
+| `vue-router` | `4.5.0` | **Required**. |
+| `eslint` | `9.18.0` | **Required**. |
+| `vite` | `6.0.11` | **Required**. |
+| `vitest` | `3.0.5` | **Required**. |
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 2. Clonar el repositorio
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```bash
+  git clone https://github.com/Jp-dsouls/coding-challenge-front
 ```
 
-### Compile and Hot-Reload for Development
+## 3. Instalar dependencias
 
-```sh
-npm run dev
+```bash
+  npm install
 ```
 
-### Compile and Minify for Production
+levantar el proyecto
 
-```sh
-npm run build
+```bash
+  npm run serve
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## 4. Ejecutar docker
 
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+```bash
+  docker build -t front-coding-challenge .
 ```
